@@ -90,3 +90,4 @@
 86	W-space       				root-menu
 87	C-A-space     				app-menu
 88	A-space       				client-menu
+89 W-I               Iconify focused window
