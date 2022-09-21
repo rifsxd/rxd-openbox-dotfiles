@@ -4,7 +4,7 @@
 ## Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
 
 ## Kill if already running
-killall -9 xfsettingsd picom polybar mpd dunst ksuperkey xfce4-power-manager
+killall -9 xfsettingsd picom polybar mpd dunst ksuperkey xfce4-power-manager spotifyd
 
 ## Restore Wallpaper
 nitrogen --restore
@@ -37,7 +37,8 @@ exec dunst &
 exec playerctld &
 
 #$ Spotify Daemon
-# exec spotifyd &
+exec spotifyd &
+#--no-daemon &
 
 ## Launch Plank
 # exec plank &

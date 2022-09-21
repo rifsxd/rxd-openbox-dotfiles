@@ -10,7 +10,7 @@
 <!--	<separator label="Main Menu"/>  -->
 		<item icon="&icons;/terminal.png" label="Terminal Emulator">
 			<action name="Execute">
-				<command>alacritty</command>
+				<command>wezterm</command>
 			</action>
 		</item>
 		<separator/>

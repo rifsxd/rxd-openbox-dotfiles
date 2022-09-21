@@ -516,7 +516,7 @@
     <!-- Apps -->
     <keybind key="W-Return">
       <action name="Execute">
-        <command>alacritty</command>
+        <command>wezterm</command>
       </action>
     </keybind>
     <keybind key="W-t">

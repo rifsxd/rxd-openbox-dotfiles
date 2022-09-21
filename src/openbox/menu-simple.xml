@@ -9,7 +9,7 @@
 <!--	<separator label="Main Menu"/>  -->
 		<item label="Terminal Emulator">
 			<action name="Execute">
-				<command>alacritty</command>
+				<command>wezterm</command>
 			</action>
 		</item>
 		<item label="File Manager">
