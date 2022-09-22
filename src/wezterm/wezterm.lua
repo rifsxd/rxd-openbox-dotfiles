@@ -1,9 +1,19 @@
 local wezterm = require 'wezterm'
 return {
-  font = wezterm.font 'Iosevka Custom',
+  font = wezterm.font( 'Iosevka Custom', { weight = 'Regular',}),
+  font_size = 9.0,
   color_scheme = 'nord',
   use_fancy_tab_bar = false,
+  window_background_opacity = 1.0,
+  default_cursor_style = 'BlinkingBlock',
+  cursor_blink_rate = 500,
+  window_close_confirmation = 'NeverPrompt',
+  scrollback_lines = 3500,
   colors = {
+      foreground = '#c2fffe',
+      cursor_bg = '#c2fffe',
+      cursor_fg = '#000000',
+      cursor_border = '#a7d1fa',
     tab_bar = {
       -- The color of the strip that goes along the top of the window
       -- (does not apply when fancy tab bar is in use)
