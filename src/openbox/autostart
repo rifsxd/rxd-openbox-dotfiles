@@ -4,7 +4,10 @@
 ## Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
 
 ## Kill if already running
-killall -9 xfsettingsd picom polybar mpd dunst ksuperkey xfce4-power-manager spotifyd
+killall -9 xfsettingsd picom polybar mpd dunst ksuperkey xfce4-power-manager spotifyd firewalld
+
+## xfce4-settings daemon
+xfsettingsd &
 
 ## Restore Wallpaper
 nitrogen --restore
@@ -12,8 +15,8 @@ nitrogen --restore
 ## Weather Daemon
 ntfd &
 
-## xfce4-settings daemon
-xfsettingsd &
+## Openbox Refresh
+openbox --restart
 
 ## polkit agent
 if [[ ! `pidof xfce-polkit` ]]; then
@@ -22,6 +25,9 @@ fi
 
 ## Enable power management
 xfce4-power-manager &
+
+## Firewall Daemon
+firewalld &
 
 ## Start Compositing Manager
 exec picom --animations --animation-window-mass 0.5 --animation-for-open-window zoom --animation-stiffness 350 &
