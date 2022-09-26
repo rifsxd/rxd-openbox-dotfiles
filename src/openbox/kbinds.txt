@@ -1,96 +1,99 @@
-o W-1             	GoToDesktop
-o W-2             	GoToDesktop
-o W-3             	GoToDesktop
-o W-4             	GoToDesktop
-o W-5             	GoToDesktop
-o W-6             	GoToDesktop
-o W-7             	GoToDesktop
-o W-8             	GoToDesktop
-o S-W-1           	SendToDesktop
-o S-W-2           	SendToDesktop
-o S-W-3           	SendToDesktop
-o S-W-4           	SendToDesktop
-o S-W-5           	SendToDesktop
-o S-W-6           	SendToDesktop
-o S-W-7           	SendToDesktop
-o S-W-8           	SendToDesktop
-o A-Tab           	NextWindow
-o W-Tab           	NextWindow
-o W-i             	Iconify
-o W-Left          	UnmaximizeFull
-o W-Right         	UnmaximizeFull
-o W-Up            	MaximizeFull
-o W-Down          	UnmaximizeFull
-o W-k             	Unmaximize
-o W-h             	Unmaximize
-o W-j             	Unmaximize
-o W-l             	Unmaximize
-o A-z             	Unmaximize
-o A-x             	Unmaximize
-o A-c             	Unmaximize
-o W-KP_1          	UnmaximizeFull
-o W-KP_2          	UnmaximizeFull
-o W-KP_3          	UnmaximizeFull
-o W-KP_4          	UnmaximizeFull
-o W-KP_5          	MaximizeFull
-o W-KP_6          	UnmaximizeFull
-o W-KP_7          	UnmaximizeFull
-o W-KP_8          	UnmaximizeFull
-o W-KP_9          	UnmaximizeFull
-o W-A-Up          	MoveRelative
-o W-A-Down        	MoveRelative
-o W-A-Left        	MoveRelative
-o W-A-Right       	MoveRelative
-o C-A-Right       	ResizeRelative
-o C-A-Left        	ResizeRelative
-o C-A-Down        	ResizeRelative
-o C-A-Up          	ResizeRelative
-o W-S-Left        	SendToDesktopLeft
-o W-S-Right       	SendToDesktopRight
-x XF86AudioRaiseVolume	volume --inc
-x XF86AudioLowerVolume	volume --dec
-x XF86AudioMute   	volume --toggle
-x XF86AudioMicMute	volume --toggle-mic
-x XF86AudioStop   	playerctl stop
-x XF86AudioPlay   	playerctl play-pause
-x XF86AudioPrev   	playerctl previous
-x XF86AudioNext   	playerctl next
-x XF86MonBrightnessUp	brightness --inc
-x XF86MonBrightnessDown	brightness --dec
-x Print           	takeshot --now
-x A-Print         	takeshot --in5
-x S-Print         	takeshot --in10
-x C-Print         	takeshot --win
-x C-A-Print       	takeshot --area
-x W-Return        	alacritty
-x W-t             	furminal
-x W-f             	thunar
-x W-w             	firefox
-x W-e             	geany
-x A-F1            	~/.config/openbox/rofi/bin/launcher
-x W-n             	networkmanager_dmenu
-x W-m             	~/.config/openbox/rofi/bin/music
-x W-x             	~/.config/openbox/rofi/bin/powermenu
-x W-s             	~/.config/openbox/rofi/bin/screenshot
-x W-r             	~/.config/openbox/rofi/bin/runner
-x W-p             	color-gpick
-x C-A-t           	xfce4-terminal
-x C-A-v           	alacritty -e vim
-x C-A-r           	alacritty -e ranger
-x C-A-h           	alacritty -e htop
-x C-A-l           	betterlockscreen -l blur 1.0
-o C-S-Escape      	Exit
-o C-S-BackSpace   	Restart
-o C-S-R           	Reconfigure
-x W-Escape        	xkill
-o W-c             	Close
-o W-q             	Close
-o A-F5            	Iconify
-o A-F6            	ToggleMaximize
-o A-F7            	ToggleDecorations
-o W-d             	ToggleShowDesktop
-o A-r             	Resize
-o A-m             	Move
-o W-space         	root-menu
-o C-A-space       	app-menu
-o A-space         	client-menu
+2022-09-25	rc.xml KEYBINDS
+-------------------------------
+
+ 0	W-1           				GoToDesktop
+ 1	W-2           				GoToDesktop
+ 2	W-3           				GoToDesktop
+ 3	W-4           				GoToDesktop
+ 4	W-5           				GoToDesktop
+ 5	W-6           				GoToDesktop
+ 6	W-7           				GoToDesktop
+ 7	W-8           				GoToDesktop
+ 8	S-W-1         				SendToDesktop
+ 9	S-W-2         				SendToDesktop
+10	S-W-3         				SendToDesktop
+11	S-W-4         				SendToDesktop
+12	S-W-5         				SendToDesktop
+13	S-W-6         				SendToDesktop
+14	S-W-7         				SendToDesktop
+15	S-W-8         				SendToDesktop
+16	A-Tab         				NextWindow
+17	W-Tab         				NextWindow
+18	W-i           				Iconify
+19	W-Left        				UnmaximizeFull
+20	W-Right       				UnmaximizeFull
+21	W-Up          				MaximizeFull
+22	W-Down        				UnmaximizeFull
+23	W-k           				Unmaximize
+24	W-h           				Unmaximize
+25	W-j           				Unmaximize
+26	W-l           				Unmaximize
+27	A-z           				Unmaximize
+28	A-x           				Unmaximize
+29	A-c           				Unmaximize
+30	W-KP_1        				UnmaximizeFull
+31	W-KP_2        				UnmaximizeFull
+32	W-KP_3        				UnmaximizeFull
+33	W-KP_4        				UnmaximizeFull
+34	W-KP_5        				MaximizeFull
+35	W-KP_6        				UnmaximizeFull
+36	W-KP_7        				UnmaximizeFull
+37	W-KP_8        				UnmaximizeFull
+38	W-KP_9        				UnmaximizeFull
+39	W-A-Up        				MoveRelative
+40	W-A-Down      				MoveRelative
+41	W-A-Left      				MoveRelative
+42	W-A-Right     				MoveRelative
+43	C-A-Right     				ResizeRelative
+44	C-A-Left      				ResizeRelative
+45	C-A-Down      				ResizeRelative
+46	C-A-Up        				ResizeRelative
+47	W-S-Left      				SendToDesktopLeft
+48	W-S-Right     				SendToDesktopRight
+49	XF86AudioRaiseVolume	volume --inc
+50	XF86AudioLowerVolume	volume --dec
+51	XF86AudioMute  			volume --toggle
+52	XF86AudioMicMute	volume --toggle-mic
+53	XF86AudioStop  			playerctl stop
+54	XF86AudioPlay  			playerctl play-pause
+55	XF86AudioPrev  			playerctl previous
+56	XF86AudioNext  			playerctl next
+57	XF86MonBrightnessUp	brightness --inc
+58	XF86MonBrightnessDown	brightness --dec
+59	Print         				takeshot --now
+60	A-Print       				takeshot --in5
+61	S-Print       				takeshot --in10
+62	C-Print       				takeshot --win
+63	C-A-Print     				takeshot --area
+64	W-Return      				wezterm
+65	W-t           				furminal
+66	W-f           				thunar
+67	W-w           				firefox
+68	W-e           				geany
+69	A-F1          				~/.config/openbox/rofi/bin/launcher
+70	W-n           				networkmanager_dmenu
+71	W-m           				~/.config/openbox/rofi/bin/music
+72	W-x           				~/.config/openbox/rofi/bin/powermenu
+73	W-s           				~/.config/openbox/rofi/bin/screenshot
+74	W-r           				~/.config/openbox/rofi/bin/runner
+75	W-p           				color-gpick
+76	C-A-t         				xfce4-terminal
+77	C-A-v         				alacritty -e vim
+78	C-A-r         				alacritty -e ranger
+79	C-A-h         				alacritty -e htop
+80	C-A-l         				betterlockscreen -l blur 1.0
+81	C-S-Escape     			Exit
+82	C-S-BackSpace  			Restart
+83	C-S-R         				Reconfigure
+84	W-Escape      				xkill
+85	W-c           				Close
+86	W-q           				Close
+87	A-F5          				Iconify
+88	A-F6          				ToggleMaximize
+89	A-F7          				ToggleDecorations
+90	W-d           				ToggleShowDesktop
+91	A-r           				Resize
+92	A-m           				Move
+93	W-space       				root-menu
+94	C-A-space     				app-menu
+95	A-space       				client-menu

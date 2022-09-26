@@ -278,7 +278,7 @@
         <y>-5</y>
       </action>
     </keybind>
-    <keybind key="A-z">
+    <keybind key="A-h">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>15</x>
@@ -287,7 +287,7 @@
         <width>32%</width>
       </action>
     </keybind>
-    <keybind key="A-x">
+    <keybind key="A-j">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>34%</x>
@@ -296,7 +296,7 @@
         <width>32%</width>
       </action>
     </keybind>
-    <keybind key="A-c">
+    <keybind key="A-k">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>-17</x>
@@ -584,6 +584,11 @@
     <keybind key="C-A-v">
       <action name="Execute">
         <command>alacritty -e vim</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-Return">
+      <action name="Execute">
+        <command>emacs</command>
       </action>
     </keybind>
     <keybind key="C-A-r">
